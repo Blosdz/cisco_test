@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+
+.scrollbar-hide {
+    scrollbar-width: none; /* Para Firefox */
+    -ms-overflow-style: none; /* Para IE y Edge */
+  }
+  
+.scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Para Chrome, Safari y Opera */
+  }
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+        
+.animate-scroll {
+  animation: scroll-left 40s linear infinite;
+}
+        
+.carousel-container:hover .carousel-track {
+  animation-play-state: paused;
+}
